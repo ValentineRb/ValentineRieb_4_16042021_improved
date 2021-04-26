@@ -1,28 +1,26 @@
 body {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   max-width: 1400px;
-  /* background: #fff; */
-  /* overflow-x: hidden; */
-  /* -webkit-font-smoothing: antialiased; */
-  /* -moz-osx-font-smoothing: grayscale; */
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 /** HEADER **/
 .header {
     width: 100%;
     padding: 30px 50px 30px 50px;
-    border: 2px solid red;
 }
 
-.logo {
+.full-logo {
     width: 240px;
    height: 45px;
 }
 
   .nav > li {
     font-size: 16px;
-    border: 2px solid yellow;
   }
 
   .nav > li a:hover,
@@ -32,7 +30,6 @@ body {
 
   .navbar-toggle {
     margin: 10px 10px 0 0;
-    border: 2px solid green;
   }
   
   .navbar-toggle .icon-bar {
@@ -40,37 +37,18 @@ body {
     width: 26px;
   }
 
-  @media (min-width: 768px) {
-    .site-navigation {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translate(0, -50%);
-      -webkit-transform: translateY(-50%);
-      border: 2px solid blue;
-    }
-  }
 
 
+/** HERO **/
+.logo {
+  width: 100px;
+  height: 100px;
+}
 
-
-
-
-
-
-
-
-
-
+/** MAIN **/
 a,
 button {
   transition: all 0.3s ease-in-out;
-  /* outline: none !important; */
-}
-
-a:hover {
-  /* text-decoration: none; */
-  /* cursor: pointer; */
 }
 
 .bloc {
@@ -169,7 +147,6 @@ a:hover {
 .d-bloc a,
 .d-bloc ,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -180,6 +157,13 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.d-bloc a .icon-md {
+  color: white;
+}
+.lien-hidden {
+  visibility:hidden;
 }
 
 .d-bloc .a-btn:hover,
@@ -432,7 +416,7 @@ a[data-lightbox]:hover::before {
   font-size: 32px;
   width: 50px;
   height: 50px;
-  margin-left: -25px;
+  margin-left: 120px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -541,7 +525,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: #575757 ;
 }
 
 .container {
@@ -567,7 +551,7 @@ a {
 }
 
 p {
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -592,10 +576,16 @@ p {
 .social {
   max-width: 400px;
   margin: auto auto auto auto;
+  padding-bottom: 30px;
+}
+
+#copyright {
+  font-size: 11px;
+  color: white ;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 25px;
   line-height: 1.4em;
 }
 
@@ -612,25 +602,19 @@ h3 {
   box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-  color: #333333 !important;
-}
-
-h4 {
-  color: #333333 !important;
-}
-
 .icons {
   margin-bottom: 14px;
   margin-top: 24px;
 }
 
 .white {
-  color: #ffffff !important;
+  color:#ffffff;
 }
 
 .portfolio-thumb {
   margin-bottom: 24px;
+  width:270px;
+  height: 270px;
 }
 
 .portfolio-row {
@@ -656,12 +640,8 @@ h4 {
   background-color: #ffffff;
 }
 
-.bgc-dark-slate-blue {
-  background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
-  background-color: #f3976c;
+  background-color: #c27956;
 }
 
 .tc-white {
@@ -729,13 +709,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -753,10 +733,6 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-  }
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -765,8 +741,6 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
 }
 
@@ -865,5 +839,15 @@ h4 {
 @media (max-width: 767px) {
   .bloc-mob-center-text {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-navigation {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    -webkit-transform: translateY(-50%);
   }
 }
