@@ -4,40 +4,38 @@ body {
   max-width: 1400px;
   background: #fff;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased; 
-  -moz-osx-font-smoothing: grayscale; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /** HEADER **/
 .header {
-    width: 100%;
-    padding: 30px 50px 30px 50px;
+  width: 100%;
+  padding: 30px 50px 30px 50px;
 }
 
 .full-logo {
-    width: 240px;
-   height: 45px;
+  width: 240px;
+  height: 45px;
 }
 
-  .nav > li {
-    font-size: 16px;
-  }
+.nav > li {
+  font-size: 16px;
+}
 
-  .nav > li a:hover,
-  .nav > li a:focus {
-    background: transparent;
-  }
+.nav > li a:hover,
+.nav > li a:focus {
+  background: transparent;
+}
 
-  .navbar-toggle {
-    margin: 10px 10px 0 0;
-  }
-  
-  .navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 26px;
-  }
+.navbar-toggle {
+  margin: 10px 10px 0 0;
+}
 
-
+.navbar-toggle .icon-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 26px;
+}
 
 /** HERO **/
 .logo {
@@ -145,7 +143,7 @@ button {
 
 .d-bloc .a-btn,
 .d-bloc a,
-.d-bloc ,
+.d-bloc,
 .d-bloc a .icon-sm,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
@@ -163,12 +161,12 @@ button {
   color: white;
 }
 .lien-hidden {
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .d-bloc .a-btn:hover,
-.d-bloc ,
-.d-bloc ,
+.d-bloc,
+.d-bloc,
 .d-bloc a:hover .icon-sm,
 .d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
@@ -304,10 +302,9 @@ button {
   padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-  font-size: 32px;
+#bloc-5-cta h2 {
+  color: white !important;
 }
-
 
 .mg-md {
   margin-top: 10px;
@@ -351,6 +348,7 @@ button {
 
 .icon-md {
   font-size: 30px !important;
+  padding-bottom: 20px;
 }
 
 .icon-lg {
@@ -447,12 +445,14 @@ a[data-lightbox]:hover img {
 
 #lightbox-modal .modal-dialog img {
   max-height: 90vh;
+  width: 270px;
+  height: 270px;
   margin: 0 auto;
 }
 
 .lightbox-caption {
   padding: 20px;
-  color: #fff;
+  color: black !important;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 15px;
@@ -525,7 +525,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 ;
+  color: #575757;
 }
 
 .container {
@@ -559,9 +559,10 @@ p {
   margin: auto auto auto auto;
 }
 
-.h1 {
+h1 {
   font-size: 20px;
   font-family: "Open Sans";
+  color: #aa4f24 !important;
 }
 
 .cta-hero {
@@ -581,7 +582,16 @@ p {
 
 #copyright {
   font-size: 11px;
-  color: white ;
+  color: white;
+}
+
+#bloc-8 p {
+  font-size: 15px;
+  color: white;
+}
+
+#bloc-3-what-i-do h2 {
+  color: white !important;
 }
 
 h2 {
@@ -608,12 +618,12 @@ h3 {
 }
 
 .white {
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .portfolio-thumb {
   margin-bottom: 24px;
-  width:270px;
+  width: 270px;
   height: 270px;
 }
 
@@ -641,7 +651,7 @@ h3 {
 }
 
 .bgc-atomic-tangerine {
-  background-color: #c27956;
+  background-color: #aa4f24;
 }
 
 .tc-white {
@@ -649,7 +659,7 @@ h3 {
 }
 
 .btn-atomic-tangerine {
-  background: #f3976c;
+  background: #aa4f24;
   color: #ffffff !important;
 }
 
@@ -667,7 +677,7 @@ h3 {
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #aa4f24 !important;
 }
 
 .ltc-atomic-tangerine:hover {

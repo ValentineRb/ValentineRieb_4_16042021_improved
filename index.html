@@ -38,7 +38,7 @@
       <nav class="navbar row">
         <div class="navbar__content">
           <a href="index.html"><img class="full-logo" src="img/logo/la_chouette_agence.png" alt="logo la chouette agence web design Lyon" /></a>
-          <button aria-label="Justify" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <button aria-label="main navigation" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div class="collapse navbar-collapse navbar-1">
           <ul class="site-navigation nav navbar-nav">
@@ -61,7 +61,7 @@
           <div class="row tight-width-whitespace">
             <div class="col-sm-12">
               <img src="img/logo/logo.png" class="center-block image-resize-mode logo" alt="logo la chouette agence web design Lyon" />
-              <h1 class="text-center hero-bloc-text tc-white">La chouette agence</h1>
+              <h1 class="text-center hero-bloc-text tc-white" >La chouette agence</h1>
               <div class="text-center">
                 <a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
               </div>
@@ -70,7 +70,6 @@
         </div>
       </section>
       <!-- bloc-1-presentation END -->
-
       <!-- bloc-2-services -->
       <section class="bloc bgc-white l-bloc" id="bloc-2-services">
         <div class="container bloc-md">
@@ -109,7 +108,6 @@
         </div>
       </section>
       <!-- bloc-2-services END -->
-
       <!-- bloc-3-what-i-do -->
       <section class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
         <div class="container bloc-lg">
@@ -125,7 +123,6 @@
         </div>
       </section>
       <!-- bloc-3-what-i-do END -->
-
       <!-- bloc-4-portfolio -->
       <section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
         <div class="container bloc-lg">
@@ -169,19 +166,23 @@
         </div>
       </section>
       <!-- bloc-4-portfolio END -->
-
       <!-- bloc-5-cta -->
-      <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
-        <div class="container bloc-lg">
-          <div class="row">
-            <h2 class="mg-md text-center tc-white">Prêt pour redonner vie à votre projet ?<br />Contactez notre équipe !</h2>
-            <div class="col-sm-12 text-center">
-              <a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+      <section>
+        <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+          <div class="container bloc-lg">
+            <div class="row">
+              <h2 class="mg-md text-center tc-white">Prêt pour redonner vie à votre projet ?<br />Contactez notre équipe !</h2>
+              <div class="col-sm-12 text-center">
+                <a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- bloc-5-cta END -->
+      <!-- ScrollToTop Button -->
+        <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+      <!-- ScrollToTop Button END-->
     </main>
     <!-- Main Section END-->
     <!-- Footer - bloc-8 -->
@@ -189,8 +190,8 @@
       <div class="container bloc-sm">
         <div class="row">
           <div class="col-sm-12">
-            <div class="row text-center">
-              La chouette agence - Agence web basée à Lyon.</p>
+            <div class="row text-center" id="adresse">
+              <p>La chouette agence - Agence web basée à Lyon.</p>
             </div>
             <div class="row row-no-gutters social">
               <div class="col-sm-3">
@@ -215,7 +216,7 @@
               </div>
             </div>
             <div class="row text-center" id="copyright">
-               Copyright (c) 2021 Copyright Holder All Rights Reserved.</p>
+               Copyright (c) 2021 Copyright Holder All Rights Reserved.
             </div>
           </div>
         </div>
