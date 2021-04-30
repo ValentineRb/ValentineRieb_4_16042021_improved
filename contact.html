@@ -49,7 +49,7 @@
       <nav class="navbar row">
         <div class="navbar__content">
           <a href="index.html"><img class="full-logo" src="img/logo/la_chouette_agence.png" alt="logo la chouette agence web design Lyon" /></a>
-          <button aria-label="main navigation" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <button aria-label="main navigation" name="menu" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
           <ul class="site-navigation nav navbar-nav">
@@ -90,21 +90,21 @@
               <form action="includes/form_1.php" method="post" class="form_1" novalidate>
                 <div class="form-group">
                   <label for="name"> Nom </label>
-                  <input type="text" id="name" placeholder="Entrez votre nom et prénom" class="form-control" required />
+                  <input type="text" name="name" id="name" placeholder="Entrez votre nom et prénom" class="form-control" required />
                 </div>
                 <div class="form-group">
                   <label for="email"> Adresse email </label>
-                  <input type="email" id="email" placeholder="Entrez une adresse email valide" class="form-control" required />
+                  <input type="email" name="email" id="email" placeholder="Entrez une adresse email valide" class="form-control" required />
                 </div>
                 <div class="form-group">
                   <label for="info"> Comment nous avez-vous connu ? </label>
-                  <input class="form-control" type="text" placeholder="Racontez-nous" required id="info" />
+                  <input type="text" name="info" id="info" class="form-control"  placeholder="Racontez-nous" required />
                 </div>
                 <div class="form-group">
                   <label for="message"> Brief de votre projet (Ajoutez autant de détails que nécessaire)<br /> </label>
-                  <textarea id="message" class="form-control" rows="4" cols="50" placeholder="Entrez votre message" required></textarea>
+                  <textarea name="message" id="message" class="form-control" rows="4" cols="50" placeholder="Entrez votre message" required></textarea>
                 </div>
-                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
+                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" autofocus name="envoyer">Envoyer</button>
               </form>
             </div>
             <div class="col-sm-12">
@@ -156,11 +156,9 @@
     </footer>
     <!-- Footer - bloc-8 END-->
     <!-- Javascript-->
-    <script src="./js/jquery-2.1.0.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
-    <script src="./js/jquery.touchSwipe.js" defer></script>
-    <script src="./js/gmaps.js"></script>
+    <script defer src="./js/jquery-2.1.0.js"></script>
+    <script defer src="./js/bootstrap.js"></script>
+    <script defer src="./js/blocs.js"></script>
     <!-- Javascript - END -->
   </body>
 </html>

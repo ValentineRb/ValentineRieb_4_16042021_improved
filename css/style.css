@@ -192,6 +192,16 @@ button {
   outline: none !important;
 }
 
+button a {
+  color: white;
+  font-weight: bold;
+}
+
+button a:hover {
+  color: white;
+  text-decoration:none;
+}
+
 .btn-rd {
   border-radius: 40px;
 }
@@ -234,6 +244,7 @@ button {
 
 .scrollToTop span {
   margin-top: 6px;
+  color: yellow;
 }
 
 .showScrollTop {
@@ -335,11 +346,13 @@ a[data-lightbox]:hover img {
 .next-lightbox {
   padding: 6px 8px 1px 13px;
   right: 25px;
+  color: black;
 }
 
 .prev-lightbox {
   padding: 6px 13px 1px 10px;
   left: 25px;
+  color: black;
 }
 
 .snapshot-lb .modal-body {
